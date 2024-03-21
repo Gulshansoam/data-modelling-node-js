@@ -19,6 +19,9 @@ orderPrice:{
 customer:{
     type:mongoose.Schema.Types.ObjectId,
     required: true
+},
+orderItems:{
+type:[orderItemSchema]
 }
 },{timestamps:true})
 
